@@ -1,0 +1,184 @@
+body{
+  
+  background: black;
+  color: beige;
+  margin: 0;
+  padding: 0;
+  scroll-behavior:smooth;
+
+  font-family: Kanit;
+}
+
+.logo{
+  font-weight: bold;
+  font-size: 1.5em;
+  
+}
+.logo-class{
+  display: flex;
+  align-items: center;
+
+}
+.logo-img img{
+  width: 30px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.icons span{
+  padding: 5px;
+  
+  
+}
+.icons span:hover{
+  padding: 5px;
+  cursor: pointer;
+  
+}
+
+.navbar .icons a span{
+  color: white  ;
+}
+
+
+.navbar{
+  margin: 20px 200px;
+  align-items: center;
+  
+}
+.navbar .links a{
+  padding: 1em;
+  color: white;
+  text-decoration: none;
+  
+}
+
+.container{
+  text-align: center;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.typewritter h1{
+  font-size: 3em;
+  overflow: hidden; /* Hide overflow text */
+    border-right: .15em solid #622f7b; /* Typing cursor */
+    white-space: nowrap; /* Prevent text from wrapping */
+    animation: typing 3s steps(40, end), blink-caret .75s step-end infinite; /* Typewriter animation */
+    margin-bottom: 0.5em;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color:#622f7b }
+}
+
+#ideaContainer {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#readMoreBtn {
+  background-color: #622f7b;
+  color: #fff;
+  border: none;
+  border: 2px solid #622f7b;
+  
+}
+
+#readMoreBtn:hover {
+  background: transparent;
+  border: 2px solid white;
+  transition:ease-in 0.1s;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+}
+#detailsContainer{
+  width: 30vw;
+  margin: 50px 0;
+}
+.btn{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.main {
+  position: relative;
+  width: 100%; /* Adjust width as needed */
+  height: 80vh; /* Adjust height as needed */
+  overflow: hidden;
+}
+
+.main video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the video covers the entire container */
+  z-index: -1; /* Move the video behind other content */
+}
+
+video{
+  opacity: 100%;
+}
+
+.section{
+  margin: 0 200px;
+  opacity: 0; /* Initially hide the div */
+    transform: translateY(50px); /* Move the div down initially */
+    transition: opacity 1s ease, transform 0.5s ease; /* Smooth transitions for opacity and transform */
+  
+}
+.section.animate {
+  opacity: 1; /* Show the div when the animation class is applied */
+  transform: translateY(0); /* Move the div back to its original position */
+}
+
+.headsec{
+  font-size: 3em;
+  font-weight: 400;
+
+}
+
+section p{
+  font-size: 1.2em;
+  font-weight: 100;
+}
+
+.subhead{
+  font-weight: 300;
+  
+}
+.lw{
+  width: 600px;
+}
+
+section ul li{
+  font-weight: 100;
+  font-size: 1.2em;
+}
+/* 
+.section2{
+  background-color: #b093d3;
+  
+} */
+
